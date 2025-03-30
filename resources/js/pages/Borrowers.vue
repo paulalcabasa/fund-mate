@@ -72,6 +72,13 @@ const invoices = [
 
     <AppLayout :breadcrumbs="breadcrumbs">
         <div class="flex h-full flex-1 flex-col gap-4 rounded-xl p-4">
+			<button
+				:class="[
+					'flex items-center rounded-md px-3.5 py-1.5 transition-colors',
+					'bg-white shadow-sm dark:bg-neutral-700 dark:text-neutral-100'
+				]">
+				<span class="ml-1.5 text-sm">New borrower</span>
+			</button>
             <div class="relative min-h-[100vh] flex-1 rounded-xl border border-sidebar-border/70 dark:border-sidebar-border md:min-h-min">
                 <Table>
                     <TableCaption>A list of your recent invoices.</TableCaption>
